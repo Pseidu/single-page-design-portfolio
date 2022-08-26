@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  
+  background-color: #d0d0d0;
+}
+main {
+  overflow-x: hidden;
+}
+
+.item1 { grid-area: graphic_design;}
+.item2 { grid-area: ui_ux;}
+.item3 { grid-area: apps;}
+.item4 { grid-area: photography;}
+.item5 { grid-area: illustrations;};
+.item6 { grid-area: motion_graphics};
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'graphic_design graphic_design ui_ux apps photography photography'
+    'graphic_design graphic_design illustrations illustrations motion_graphics motion_graphics';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+div.carousel {
+  display: flex;
+  justify-content: center;
+}
