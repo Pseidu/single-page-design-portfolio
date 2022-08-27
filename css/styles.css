@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+:root {
+  --bg: #FFF7F0;
+  --button-nav: #030303;
+  --purple: #755CDE;
+  --button-hero: #EB7565;
+  --orange: #F6A560;
+  --pinkie: #F39E9E;
+  --bluemed: #61C4B7;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,50 +17,83 @@
 
 body {
   min-height: 100vh;
-  background-color: #d0d0d0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  background-color: var(--bg);
+}
+
+a {
+  height: 56px;
+  width: 228px;
+  line-height: 56px;
+  text-align: center;
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 28px;
+}
+
+nav {
+  margin: 34px 165px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  background-color: var(--button-nav);
+}
+nav a:hover {
+  background-color: var(--purple);
 }
 
 main {
   overflow-x: hidden;
 }
-
-.item1 {
-  grid-area: graphic_design;
+main h1 {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 70px;
 }
-
-.item2 {
-  grid-area: ui_ux;
-}
-
-.item3 {
-  grid-area: apps;
-}
-
-.item4 {
-  grid-area: photography;
-}
-
-.item5 {
-  grid-area: illustrations;
-}
-
-.item6 {
-  grid-area: motion_graphics;
+main p {
+  padding: 0 26%;
+  text-align: center;
 }
 
 .grid-container {
+  padding: 0 165px;
+  height: 364px;
   display: grid;
   grid-template-areas: "graphic_design graphic_design ui_ux apps photography photography" "graphic_design graphic_design illustrations illustrations motion_graphics motion_graphics";
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
 }
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+.grid-container .item1 {
+  grid-area: graphic_design;
+  background-color: var(--purple);
+  border-radius: 8px;
+}
+.grid-container .item2 {
+  grid-area: ui_ux;
+  background-color: var(--orange);
+  border-radius: 8px;
+}
+.grid-container .item3 {
+  grid-area: apps;
+  background-color: var(--pinkie);
+  border-radius: 8px;
+}
+.grid-container .item4 {
+  grid-area: photography;
+  background-color: var(--bluemed);
+  border-radius: 8px;
+}
+.grid-container .item5 {
+  grid-area: illustrations;
+  border-radius: 8px;
+}
+.grid-container .item6 {
+  grid-area: motion_graphics;
+  border-radius: 8px;
 }
 
 div.carousel {
