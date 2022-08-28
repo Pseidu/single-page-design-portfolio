@@ -6,7 +6,8 @@
   --button-hero: #EB7565;
   --orange: #F6A560;
   --pinkie: #F39E9E;
-  --bluemed: #61C4B7;
+  --blue-med: #61C4B7;
+  --dark-red: #552049;
 }
 
 * {
@@ -66,6 +67,18 @@ main p {
   height: 364px;
   display: grid;
   grid-template-areas: "graphic_design graphic_design ui_ux apps photography photography" "graphic_design graphic_design illustrations illustrations motion_graphics motion_graphics";
+  gap: 30px;
+}
+.grid-container .item {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 24px;
+  /*h3 {
+    //margin-top: auto;
+  }*/
+}
+.grid-container .item img {
+  justify-self: end;
 }
 .grid-container .item1 {
   grid-area: graphic_design;
@@ -84,15 +97,17 @@ main p {
 }
 .grid-container .item4 {
   grid-area: photography;
-  background-color: var(--bluemed);
+  background-color: var(--blue-med);
   border-radius: 8px;
 }
 .grid-container .item5 {
   grid-area: illustrations;
+  background-color: var(--button-hero);
   border-radius: 8px;
 }
 .grid-container .item6 {
   grid-area: motion_graphics;
+  background-color: var(--dark-red);
   border-radius: 8px;
 }
 

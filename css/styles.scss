@@ -7,7 +7,8 @@
   --button-hero: #EB7565;
   --orange: #F6A560;
   --pinkie: #F39E9E;
-  --bluemed: #61C4B7;
+  --blue-med: #61C4B7;
+  --dark-red: #552049;
 }
 * {
   box-sizing: border-box;
@@ -72,40 +73,65 @@ main {
 }
 
 .grid-container {
+
   padding: 0 165px;
   height: 364px;
   display: grid;
   grid-template-areas:
     'graphic_design graphic_design ui_ux apps photography photography'
     'graphic_design graphic_design illustrations illustrations motion_graphics motion_graphics';
+  gap: 30px;
+
+  .item {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    padding: 24px;
+    
+    img {
+      justify-self: end;
+    }
+
+    /*h3 {
+      //margin-top: auto;
+    }*/
+  }
+
   .item1 {
     grid-area: graphic_design;
     background-color: var(--purple);
     border-radius: 8px;
   }
+
   .item2 {
     grid-area: ui_ux;
     background-color: var(--orange);
     border-radius: 8px;
   }
+
   .item3 {
     grid-area: apps;
     background-color: var(--pinkie);
     border-radius: 8px;
   }
+
   .item4 {
     grid-area: photography;
-    background-color: var(--bluemed);
+    background-color: var(--blue-med);
     border-radius: 8px;
   }
+
   .item5 {
     grid-area: illustrations;
+    background-color: var(--button-hero);
     border-radius: 8px;
   }
+
   .item6 {
     grid-area: motion_graphics;
+    background-color: var(--dark-red);
     border-radius: 8px;
   }
+  
 }
 
 
