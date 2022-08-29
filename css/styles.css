@@ -8,6 +8,7 @@
   --pinkie: #F39E9E;
   --blue-med: #61C4B7;
   --dark-red: #552049;
+  --medium-brown: #7A746E;
 }
 
 * {
@@ -21,6 +22,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 18px;
   font-weight: 500;
+  color: var(--medium-brown);
   line-height: 28px;
   background-color: var(--bg);
 }
@@ -56,10 +58,31 @@ main h1 {
   font-size: 56px;
   font-weight: 700;
   line-height: 70px;
+  color: var(--button-nav);
 }
-main p {
+main p.intro {
   padding: 0 26%;
   text-align: center;
+}
+main h2.carousel {
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--button-nav);
+  text-align: center;
+}
+main div.prev-next {
+  text-align: center;
+}
+main div.prev-next button {
+  width: 64px;
+  height: 64px;
+  background-color: var(--button-nav);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+main div.prev-next button:hover {
+  background-color: var(--purple);
 }
 
 .grid-container {
@@ -73,42 +96,64 @@ main p {
   display: grid;
   grid-template-rows: 1fr auto;
   padding: 24px;
-  /*h3 {
-    //margin-top: auto;
-  }*/
+  border-radius: 8px;
 }
 .grid-container .item img {
   justify-self: end;
 }
+.grid-container .item h3 {
+  color: var(--bg);
+  font-size: 24px;
+  font-weight: 500;
+}
 .grid-container .item1 {
   grid-area: graphic_design;
   background-color: var(--purple);
-  border-radius: 8px;
 }
 .grid-container .item2 {
   grid-area: ui_ux;
   background-color: var(--orange);
-  border-radius: 8px;
 }
 .grid-container .item3 {
   grid-area: apps;
   background-color: var(--pinkie);
-  border-radius: 8px;
 }
 .grid-container .item4 {
   grid-area: photography;
   background-color: var(--blue-med);
-  border-radius: 8px;
 }
 .grid-container .item5 {
   grid-area: illustrations;
   background-color: var(--button-hero);
-  border-radius: 8px;
 }
 .grid-container .item6 {
   grid-area: motion_graphics;
   background-color: var(--dark-red);
-  border-radius: 8px;
+}
+
+.hero-info {
+  margin: 34px 165px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-info .photo {
+  width: 445px;
+}
+.hero-info .text {
+  width: 50%;
+}
+.hero-info .text h2 {
+  font-size: 40px;
+  line-height: 51px;
+  color: var(--button-nav);
+}
+.hero-info a {
+  background-color: var(--button-hero);
+  display: inline-block;
+}
+.hero-info a:hover {
+  background-color: var(--orange);
 }
 
 div.carousel {
