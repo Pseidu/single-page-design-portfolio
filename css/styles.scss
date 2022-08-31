@@ -67,15 +67,17 @@ main {
 
   h1 {
     text-align: center;
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 70px;
+    line-height: 1.25em;
     color: var(--button-nav);
   }
 
   p.intro {
-    padding: 0 26%;
+    margin: 16px 45px;
     text-align: center;
+    font-size: 16px;
+    line-height: 26px;
   }
 
   h2.carousel {
@@ -241,7 +243,7 @@ main {
   }
 
   nav {
-    margin: 34px 39px 0;
+    margin: 34px 39px 56px;
     img {
       width: initial;
     }
@@ -249,15 +251,94 @@ main {
       font-size: initial;
     }
   }
+
+  main {
+    h1 {
+      font-size: 44px;
+      line-height: inherit;
+    }
+  
+    p.intro {
+      margin: 32px 12%;
+      font-size: inherit;
+      line-height: inherit;
+    }
+  
+    h2.carousel {
+      font-size: 32px;
+      line-height: 40px;
+      color: var(--button-nav);
+      text-align: center;
+    }
+  
+    div.carousel {
+      display: flex;
+      justify-content: center;
+    }
+  
+    div.prev-next {
+      text-align: center;
+      
+      button {
+        width: 64px;
+        height: 64px;
+        background-color: var(--button-nav);
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: var(--purple);
+        }
+      }
+    }
+  
+  }
 }
 
 @media screen and (min-width: 900px) {
-  a {
-    height: 56px;
-    width: 228px;
-    line-height: 56px;
-  }
   nav {
-    margin: 34px 165px 0;
+    margin: 34px 165px 68px;
+  }
+
+  main {
+    h1 {
+      font-size: 56px;
+      line-height: 70px;
+    }
+  
+    p.intro {
+      margin: 32px 25%;
+    }
+  
+    h2.carousel {
+      font-size: 32px;
+      line-height: 40px;
+      color: var(--button-nav);
+      text-align: center;
+    }
+  
+    div.carousel {
+      display: flex;
+      justify-content: center;
+    }
+  
+    div.prev-next {
+      text-align: center;
+      
+      button {
+        width: 64px;
+        height: 64px;
+        background-color: var(--button-nav);
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: var(--purple);
+        }
+      }
+    }
+  
   }
 }
