@@ -71,14 +71,22 @@ main p.intro {
   line-height: 26px;
 }
 main h2.carousel {
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 24px;
+  font-weight: 700;
   color: var(--button-nav);
   text-align: center;
+  margin-bottom: 32px;
 }
 main div.carousel {
   display: flex;
   justify-content: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  margin-bottom: 32px;
+}
+main div.carousel img {
+  border-radius: 10px;
+  width: 270px;
 }
 main div.prev-next {
   text-align: center;
@@ -90,6 +98,7 @@ main div.prev-next button {
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  margin: 0 8px;
 }
 main div.prev-next button:hover {
   background-color: var(--purple);
@@ -226,22 +235,11 @@ main div.prev-next button:hover {
     text-align: center;
   }
   main div.carousel {
-    display: flex;
-    justify-content: center;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
-  main div.prev-next {
-    text-align: center;
-  }
-  main div.prev-next button {
-    width: 64px;
-    height: 64px;
-    background-color: var(--button-nav);
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-  }
-  main div.prev-next button:hover {
-    background-color: var(--purple);
+  main div.carousel img {
+    width: 540px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -260,10 +258,6 @@ main div.prev-next button:hover {
     line-height: 40px;
     color: var(--button-nav);
     text-align: center;
-  }
-  main div.carousel {
-    display: flex;
-    justify-content: center;
   }
   main div.prev-next {
     text-align: center;

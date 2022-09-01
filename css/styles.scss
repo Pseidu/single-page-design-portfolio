@@ -81,15 +81,23 @@ main {
   }
 
   h2.carousel {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    font-weight: 700;
     color: var(--button-nav);
     text-align: center;
+    margin-bottom: 32px;
   }
 
   div.carousel {
     display: flex;
     justify-content: center;
+    column-gap: 15px;
+    margin-bottom: 32px;
+
+    img {
+      border-radius: 10px;
+      width: 270px;
+    }
   }
 
   div.prev-next {
@@ -102,6 +110,7 @@ main {
       border-radius: 50%;
       border: none;
       cursor: pointer;
+      margin: 0 8px;
 
       &:hover {
         background-color: var(--purple);
@@ -272,27 +281,12 @@ main {
     }
   
     div.carousel {
-      display: flex;
-      justify-content: center;
-    }
-  
-    div.prev-next {
-      text-align: center;
-      
-      button {
-        width: 64px;
-        height: 64px;
-        background-color: var(--button-nav);
-        border-radius: 50%;
-        border: none;
-        cursor: pointer;
-  
-        &:hover {
-          background-color: var(--purple);
-        }
+      column-gap: 30px;
+
+      img {
+        width: 540px;
       }
     }
-  
   }
 }
 
@@ -316,11 +310,6 @@ main {
       line-height: 40px;
       color: var(--button-nav);
       text-align: center;
-    }
-  
-    div.carousel {
-      display: flex;
-      justify-content: center;
     }
   
     div.prev-next {
