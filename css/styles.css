@@ -22,8 +22,8 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  color: var(--medium-brown);
   line-height: 28px;
+  color: var(--medium-brown);
   background-color: var(--bg);
 }
 
@@ -65,7 +65,7 @@ main h1 {
   color: var(--button-nav);
 }
 main p.intro {
-  margin: 16px 45px;
+  margin: 16px 45px 0;
   text-align: center;
   font-size: 16px;
   line-height: 26px;
@@ -105,11 +105,12 @@ main div.prev-next button:hover {
 }
 
 .grid-container {
-  padding: 0 165px;
-  height: 364px;
+  margin-top: 32px;
+  padding: 0 16px;
+  height: 1164px;
   display: grid;
-  grid-template-areas: "graphic_design graphic_design ui_ux apps photography photography" "graphic_design graphic_design illustrations illustrations motion_graphics motion_graphics";
-  gap: 30px;
+  grid-template-areas: "graphic_design graphic_design" "graphic_design graphic_design" "ui_ux apps" "illustrations illustrations" "photography photography" "motion_graphics motion_graphics";
+  gap: 25px;
 }
 .grid-container .item {
   display: grid;
@@ -151,21 +152,25 @@ main div.prev-next button:hover {
 }
 
 .hero-info {
-  margin: 34px 165px 0;
+  margin: 100px 16px 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 .hero-info .photo {
-  width: 445px;
-}
-.hero-info .text {
-  width: 50%;
+  width: 300px;
 }
 .hero-info .text h2 {
-  font-size: 40px;
-  line-height: 51px;
+  margin-top: 40px;
+  font-size: 26px;
+  line-height: 33px;
   color: var(--button-nav);
+  text-align: center;
+}
+.hero-info .text p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
 }
 .hero-info a {
   background-color: var(--button-hero);
@@ -224,7 +229,7 @@ main div.prev-next button:hover {
     line-height: inherit;
   }
   main p.intro {
-    margin: 32px 12%;
+    margin: 32px 12% 0;
     font-size: inherit;
     line-height: inherit;
   }
@@ -241,6 +246,44 @@ main div.prev-next button:hover {
   main div.carousel img {
     width: 540px;
   }
+  .grid-container {
+    margin-top: 64px;
+    padding: 0 39px;
+    height: 570px;
+    grid-template-areas: "graphic_design graphic_design ui_ux apps" "graphic_design graphic_design illustrations illustrations" "photography photography motion_graphics motion_graphics";
+    gap: 24px;
+  }
+  .hero-info {
+    margin: 34px 165px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero-info .photo {
+    width: 445px;
+  }
+  .hero-info .text {
+    width: 50%;
+  }
+  .hero-info .text h2 {
+    font-size: 40px;
+    line-height: 51px;
+    color: var(--button-nav);
+    text-align: left;
+  }
+  .hero-info .text p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .hero-info a {
+    background-color: var(--button-hero);
+    display: inline-block;
+  }
+  .hero-info a:hover {
+    background-color: var(--orange);
+  }
 }
 @media screen and (min-width: 900px) {
   nav {
@@ -251,7 +294,7 @@ main div.prev-next button:hover {
     line-height: 70px;
   }
   main p.intro {
-    margin: 32px 25%;
+    margin: 32px 25% 0;
   }
   main h2.carousel {
     font-size: 32px;
@@ -272,5 +315,37 @@ main div.prev-next button:hover {
   }
   main div.prev-next button:hover {
     background-color: var(--purple);
+  }
+  .grid-container {
+    margin-top: 80px;
+    padding: 0 165px;
+    height: 364px;
+    grid-template-areas: "graphic_design graphic_design ui_ux apps photography photography" "graphic_design graphic_design illustrations illustrations motion_graphics motion_graphics";
+    gap: 30px;
+  }
+  .hero-info {
+    margin: 34px 165px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero-info .photo {
+    width: 445px;
+  }
+  .hero-info .text {
+    width: 50%;
+  }
+  .hero-info .text h2 {
+    font-size: 40px;
+    line-height: 51px;
+    color: var(--button-nav);
+  }
+  .hero-info a {
+    background-color: var(--button-hero);
+    display: inline-block;
+  }
+  .hero-info a:hover {
+    background-color: var(--orange);
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -25,9 +25,9 @@ body {
     size: 18px;
     weight: 500;
   }
-  
-  color: var(--medium-brown);
   line-height: 28px;
+
+  color: var(--medium-brown);
   background-color: var(--bg);
 }
 
@@ -74,7 +74,7 @@ main {
   }
 
   p.intro {
-    margin: 16px 45px;
+    margin: 16px 45px 0;
     text-align: center;
     font-size: 16px;
     line-height: 26px;
@@ -121,14 +121,18 @@ main {
 }
 
 .grid-container {
-
-  padding: 0 165px;
-  height: 364px;
+  margin-top: 32px;
+  padding: 0 16px;
+  height: 1164px;
   display: grid;
   grid-template-areas:
-    'graphic_design graphic_design ui_ux apps photography photography'
-    'graphic_design graphic_design illustrations illustrations motion_graphics motion_graphics';
-  gap: 30px;
+    'graphic_design graphic_design'
+    'graphic_design graphic_design'
+    'ui_ux apps'
+    'illustrations illustrations'
+    'photography photography'
+    'motion_graphics motion_graphics';
+  gap: 25px;
 
   .item {
     display: grid;
@@ -180,22 +184,28 @@ main {
 }
 
 .hero-info {
-  margin: 34px 165px 0;
+  margin: 100px 16px 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 
   .photo {
-    width: 445px;
+    width: 300px;
   }
 
   .text {
-    width: 50%;
-
     h2 {
-      font-size: 40px;
-      line-height: 51px;
+      margin-top: 40px;
+      font-size: 26px;
+      line-height: 33px;
       color: var(--button-nav);
+      text-align: center;
+    }
+                            //voy por aquí. Falta comprobar tamaño móvil y ajustar los otros
+    p{
+      text-align: center;
+      font-size: 16px;
+      line-height: 26px;
     }
   }
 
@@ -268,7 +278,7 @@ main {
     }
   
     p.intro {
-      margin: 32px 12%;
+      margin: 32px 12% 0;
       font-size: inherit;
       line-height: inherit;
     }
@@ -288,6 +298,55 @@ main {
       }
     }
   }
+
+  .grid-container {
+    margin-top: 64px;
+    padding: 0 39px;
+    height: 570px;
+    grid-template-areas:
+      'graphic_design graphic_design ui_ux apps'
+      'graphic_design graphic_design illustrations illustrations'
+      'photography photography motion_graphics motion_graphics';
+    gap: 24px;
+  }
+
+  .hero-info {
+    margin: 34px 165px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    .photo {
+      width: 445px;
+    }
+  
+    .text {
+      width: 50%;
+  
+      h2 {
+        font-size: 40px;
+        line-height: 51px;
+        color: var(--button-nav);
+        text-align: left;
+      }
+
+      p{
+        text-align: left;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  
+    a {
+      background-color: var(--button-hero);
+      display: inline-block;
+  
+      &:hover {
+        background-color: var(--orange);
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -302,7 +361,7 @@ main {
     }
   
     p.intro {
-      margin: 32px 25%;
+      margin: 32px 25% 0;
     }
   
     h2.carousel {
@@ -329,5 +388,46 @@ main {
       }
     }
   
+  }
+
+  .grid-container {
+    margin-top: 80px;
+    padding: 0 165px;
+    height: 364px;
+    grid-template-areas:
+      'graphic_design graphic_design ui_ux apps photography photography'
+      'graphic_design graphic_design illustrations illustrations motion_graphics motion_graphics';
+    gap: 30px;
+  }
+
+  .hero-info {
+    margin: 34px 165px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    .photo {
+      width: 445px;
+    }
+  
+    .text {
+      width: 50%;
+  
+      h2 {
+        font-size: 40px;
+        line-height: 51px;
+        color: var(--button-nav);
+      }
+    }
+  
+    a {
+      background-color: var(--button-hero);
+      display: inline-block;
+  
+      &:hover {
+        background-color: var(--orange);
+      }
+    }
   }
 }
