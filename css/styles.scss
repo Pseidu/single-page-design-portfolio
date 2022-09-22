@@ -81,17 +81,18 @@ main {
   }
 
   h2.carousel {
+    margin-top: 100px;
     font-size: 24px;
     font-weight: 700;
     color: var(--button-nav);
     text-align: center;
-    margin-bottom: 32px;
   }
 
   div.carousel {
     display: flex;
     justify-content: center;
     column-gap: 15px;
+    margin-top: 32px;
     margin-bottom: 32px;
 
     img {
@@ -201,8 +202,9 @@ main {
       color: var(--button-nav);
       text-align: center;
     }
-                            //voy por aquí. Falta comprobar tamaño móvil y ajustar los otros
+
     p{
+      margin-top: 24px;
       text-align: center;
       font-size: 16px;
       line-height: 26px;
@@ -211,7 +213,9 @@ main {
 
   a {
     background-color: var(--button-hero);
-    display: inline-block;
+    display: block;
+    margin: 24px auto 0;
+    font-size: 14px;
 
     &:hover {
       background-color: var(--orange);
@@ -284,14 +288,15 @@ main {
     }
   
     h2.carousel {
+      margin-top: 120px;
       font-size: 32px;
       line-height: 40px;
-      color: var(--button-nav);
-      text-align: center;
     }
   
     div.carousel {
       column-gap: 30px;
+      margin-top: 56px;
+      margin-bottom: 56px;
 
       img {
         width: 540px;
@@ -311,27 +316,27 @@ main {
   }
 
   .hero-info {
-    margin: 34px 165px 0;
+    margin: 90px 0 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   
     .photo {
-      width: 445px;
+      width: 364px;
     }
   
     .text {
-      width: 50%;
-  
+      width: 45%;
+      
       h2 {
-        font-size: 40px;
-        line-height: 51px;
-        color: var(--button-nav);
+        font-size: 32px;
+        line-height: 40px;
         text-align: left;
       }
 
       p{
+        padding-right: 10px;
         text-align: left;
         font-size: 18px;
         line-height: 28px;
@@ -339,12 +344,7 @@ main {
     }
   
     a {
-      background-color: var(--button-hero);
-      display: inline-block;
-  
-      &:hover {
-        background-color: var(--orange);
-      }
+      font-size: 16px;
     }
   }
 }
@@ -365,10 +365,7 @@ main {
     }
   
     h2.carousel {
-      font-size: 32px;
-      line-height: 40px;
-      color: var(--button-nav);
-      text-align: center;
+      margin-top: 88px;
     }
   
     div.prev-next {
@@ -401,11 +398,7 @@ main {
   }
 
   .hero-info {
-    margin: 34px 165px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    margin: 136px 165px 0;
   
     .photo {
       width: 445px;
@@ -417,17 +410,11 @@ main {
       h2 {
         font-size: 40px;
         line-height: 51px;
-        color: var(--button-nav);
       }
     }
   
     a {
-      background-color: var(--button-hero);
       display: inline-block;
-  
-      &:hover {
-        background-color: var(--orange);
-      }
     }
   }
 }

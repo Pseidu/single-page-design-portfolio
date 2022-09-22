@@ -71,17 +71,18 @@ main p.intro {
   line-height: 26px;
 }
 main h2.carousel {
+  margin-top: 100px;
   font-size: 24px;
   font-weight: 700;
   color: var(--button-nav);
   text-align: center;
-  margin-bottom: 32px;
 }
 main div.carousel {
   display: flex;
   justify-content: center;
   -moz-column-gap: 15px;
        column-gap: 15px;
+  margin-top: 32px;
   margin-bottom: 32px;
 }
 main div.carousel img {
@@ -168,13 +169,16 @@ main div.prev-next button:hover {
   text-align: center;
 }
 .hero-info .text p {
+  margin-top: 24px;
   text-align: center;
   font-size: 16px;
   line-height: 26px;
 }
 .hero-info a {
   background-color: var(--button-hero);
-  display: inline-block;
+  display: block;
+  margin: 24px auto 0;
+  font-size: 14px;
 }
 .hero-info a:hover {
   background-color: var(--orange);
@@ -234,14 +238,15 @@ main div.prev-next button:hover {
     line-height: inherit;
   }
   main h2.carousel {
+    margin-top: 120px;
     font-size: 32px;
     line-height: 40px;
-    color: var(--button-nav);
-    text-align: center;
   }
   main div.carousel {
     -moz-column-gap: 30px;
          column-gap: 30px;
+    margin-top: 56px;
+    margin-bottom: 56px;
   }
   main div.carousel img {
     width: 540px;
@@ -254,35 +259,31 @@ main div.prev-next button:hover {
     gap: 24px;
   }
   .hero-info {
-    margin: 34px 165px 0;
+    margin: 90px 0 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
   .hero-info .photo {
-    width: 445px;
+    width: 364px;
   }
   .hero-info .text {
-    width: 50%;
+    width: 45%;
   }
   .hero-info .text h2 {
-    font-size: 40px;
-    line-height: 51px;
-    color: var(--button-nav);
+    font-size: 32px;
+    line-height: 40px;
     text-align: left;
   }
   .hero-info .text p {
+    padding-right: 10px;
     text-align: left;
     font-size: 18px;
     line-height: 28px;
   }
   .hero-info a {
-    background-color: var(--button-hero);
-    display: inline-block;
-  }
-  .hero-info a:hover {
-    background-color: var(--orange);
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -297,10 +298,7 @@ main div.prev-next button:hover {
     margin: 32px 25% 0;
   }
   main h2.carousel {
-    font-size: 32px;
-    line-height: 40px;
-    color: var(--button-nav);
-    text-align: center;
+    margin-top: 88px;
   }
   main div.prev-next {
     text-align: center;
@@ -324,11 +322,7 @@ main div.prev-next button:hover {
     gap: 30px;
   }
   .hero-info {
-    margin: 34px 165px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    margin: 136px 165px 0;
   }
   .hero-info .photo {
     width: 445px;
@@ -339,13 +333,8 @@ main div.prev-next button:hover {
   .hero-info .text h2 {
     font-size: 40px;
     line-height: 51px;
-    color: var(--button-nav);
   }
   .hero-info a {
-    background-color: var(--button-hero);
     display: inline-block;
-  }
-  .hero-info a:hover {
-    background-color: var(--orange);
   }
 }/*# sourceMappingURL=styles.css.map */
