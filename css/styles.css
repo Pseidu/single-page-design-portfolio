@@ -185,29 +185,28 @@ main div.prev-next button:hover {
 }
 
 .contact {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 320px;
   background-color: var(--button-nav);
   border-radius: 10px;
-  margin: 0 165px;
-  padding: 0 65px;
-}
-.contact div {
-  width: 55%;
+  margin: 100px 15px 24px;
+  padding: 49px 24px;
 }
 .contact h2 {
-  font-size: 40px;
-  line-height: 51px;
+  font-size: 26px;
   color: var(--bg);
+  text-align: center;
 }
 .contact p {
+  margin-top: 24px;
   color: var(--bg);
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
 }
 .contact a {
   background-color: var(--button-hero);
-  display: inline-block;
+  display: block;
+  margin: 24px auto 0;
+  font-size: 14px;
 }
 .contact a:hover {
   background-color: var(--orange);
@@ -285,6 +284,21 @@ main div.prev-next button:hover {
   .hero-info a {
     font-size: 16px;
   }
+  .contact {
+    margin: 120px 39px 22px;
+    padding: 56px 75px 64px;
+  }
+  .contact h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .contact p {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .contact a {
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 900px) {
   nav {
@@ -336,5 +350,33 @@ main div.prev-next button:hover {
   }
   .hero-info a {
     display: inline-block;
+  }
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 320px;
+    background-color: var(--button-nav);
+    border-radius: 10px;
+    margin: 0 165px;
+    padding: 0 65px;
+  }
+  .contact div {
+    width: 55%;
+  }
+  .contact h2 {
+    font-size: 40px;
+    line-height: 51px;
+    color: var(--bg);
+  }
+  .contact p {
+    color: var(--bg);
+  }
+  .contact a {
+    background-color: var(--button-hero);
+    display: inline-block;
+  }
+  .contact a:hover {
+    background-color: var(--orange);
   }
 }/*# sourceMappingURL=styles.css.map */
