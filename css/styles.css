@@ -356,9 +356,7 @@ main div.prev-next button:hover {
     justify-content: space-between;
     align-items: center;
     min-height: 320px;
-    background-color: var(--button-nav);
-    border-radius: 10px;
-    margin: 0 165px;
+    margin: 88px 165px 22px;
     padding: 0 65px;
   }
   .contact div {
@@ -367,16 +365,8 @@ main div.prev-next button:hover {
   .contact h2 {
     font-size: 40px;
     line-height: 51px;
-    color: var(--bg);
-  }
-  .contact p {
-    color: var(--bg);
   }
   .contact a {
-    background-color: var(--button-hero);
     display: inline-block;
-  }
-  .contact a:hover {
-    background-color: var(--orange);
   }
 }/*# sourceMappingURL=styles.css.map */

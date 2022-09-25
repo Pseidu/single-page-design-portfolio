@@ -441,9 +441,7 @@ main {
     align-items: center;
   
     min-height: 320px;
-    background-color: var(--button-nav);
-    border-radius: 10px;
-    margin: 0 165px;
+    margin: 88px 165px 22px;
     padding: 0 65px;
   
     div {
@@ -453,20 +451,10 @@ main {
     h2 {
       font-size: 40px;
       line-height: 51px;
-      color: var(--bg);
     }
-  
-    p {
-      color: var(--bg);
-    }
-  
+ 
     a {
-      background-color: var(--button-hero);
       display: inline-block;
-  
-      &:hover {
-        background-color: var(--orange);
-      }
     }
   }
   
